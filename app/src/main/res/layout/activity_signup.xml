@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:background="#474755">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AWS Signup"
+        android:textColor="#ffffff"
+        android:textSize="23dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:hint="Enter Name"
+            android:textColorHint="#ffffff"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:id="@+id/useremail"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:hint="Enter Email"
+            android:textColorHint="#ffffff"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="90dp"/>
+        <EditText
+            android:id="@+id/userphone"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:hint="Phone No"
+            android:textColorHint="#ffffff"
+            android:layout_marginTop="130dp"/>
+
+        <EditText
+            android:id="@+id/userpass"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+            android:textColor="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#ffffff"
+            android:layout_marginTop="170dp"/>
+
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="225dp"
+            android:layout_centerHorizontal="true"
+            android:text="Sign Up"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp">
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:hint="Code"
+            android:textColorHint="#ffffff"
+            android:layout_marginTop="130dp"/>
+
+        <Button
+            android:id="@+id/verify"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="190dp"
+            android:layout_centerHorizontal="true"
+            android:text="Verify"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

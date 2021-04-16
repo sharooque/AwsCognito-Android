@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="#474755">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/person_pin"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:id="@+id/displayName1"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:fontFamily="monospace"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="#ffffff"
+        android:textSize="36dp"
+        android:textColorHint="#ffffff"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"/>
+
+    <View
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#088E5C"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="#088E5C"
+        android:layout_marginTop="530dp"
+        android:text="Logout"
+        android:id="@+id/logout"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/person_icon"></ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="07dp"
+            android:layout_marginTop="330dp"
+            android:id="@+id/displayName"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/phone_icon"></ImageView>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="monospace"
+
+                android:layout_marginLeft="07dp"
+                android:layout_marginTop="390dp"
+                android:id="@+id/displayMob"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/email_icon"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="07dp"
+                android:layout_marginTop="450dp"
+                android:id="@+id/displayEmail"
+                android:fontFamily="monospace"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                />
+    </LinearLayout>
+
+</RelativeLayout>
+
+
