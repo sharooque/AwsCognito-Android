@@ -19,7 +19,6 @@ public class CognitoSettings {
     private String clientSecret ="";
     private Regions cognitoRegion = Regions.DEFAULT_REGION;
 
-
 private Context context;
 
 public CognitoSettings(Context context) {
