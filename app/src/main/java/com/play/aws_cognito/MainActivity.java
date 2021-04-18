@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         thisUser.getDetailsInBackground(new GetDetailsHandler() {
             @Override
             public void onSuccess(CognitoUserDetails cognitoUserDetails) {
-                String username = cognitoUserDetails.getAttributes().getAttributes().get("custom:username");
+                String username = cognitoUserDetails.getAttributes().getAttributes().get("preferred_username");
                 String name = cognitoUserDetails.getAttributes().getAttributes().get("name");
                 String email  = cognitoUserDetails.getAttributes().getAttributes().get("email");
                 String phone  = cognitoUserDetails.getAttributes().getAttributes().get("phone_number");

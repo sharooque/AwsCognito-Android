@@ -66,7 +66,7 @@ public class signup extends AppCompatActivity {
 
 
                 userAttributes.addAttribute("name",String.valueOf(name.getText()));
-                userAttributes.addAttribute("custom:username",String.valueOf(username.getText()));
+                userAttributes.addAttribute("preferred_username",String.valueOf(username.getText()));
                 userAttributes.addAttribute("phone_number",String.valueOf(userphno.getText()));
                 userAttributes.addAttribute("email",String.valueOf(useremail.getText()));
 
