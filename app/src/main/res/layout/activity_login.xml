@@ -5,18 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login"
-    android:background="#474755">
+    android:background="#000000">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AWS Login"
+        android:text="AWS LOGIN"
         android:textColor="#ffffff"
         android:textSize="24dp"
+        android:fontFamily="sans-serif-black"
         android:textColorHint="#ffffff"
-        android:fontFamily="sans-serif-smallcaps"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"/>
+
+    <View
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#088E5C"/>
 
     <RelativeLayout
         android:layout_width="300dp"
@@ -51,8 +57,8 @@
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:background="#2196F3"
             android:text="Login"
+            android:background="#088E5C"
             android:layout_marginTop="300dp"
             android:id="@+id/login"
             />
@@ -73,6 +79,7 @@
             android:text="Forgot Password ?"
             android:id="@+id/forgotPassword"
             android:textColor="#ffffff"
+
             />
 
         <Button
@@ -81,6 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Sign Up"
+
             android:textColor="#ffffff"
             />
 

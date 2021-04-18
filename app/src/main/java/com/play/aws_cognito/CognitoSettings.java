@@ -1,6 +1,5 @@
 package com.play.aws_cognito;
 
-
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;

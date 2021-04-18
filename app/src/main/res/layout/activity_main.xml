@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login"
-    android:background="#474755">
+    android:background="#000000">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -20,20 +20,20 @@
 
         android:layout_centerHorizontal="true"
         android:layout_marginTop="240dp"
-        android:id="@+id/displayName1"
+        android:id="@+id/displayUsername"
         android:textColor="#ffffff"
         android:textSize="24dp"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif-black"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile"
+        android:text="PROFILE"
         android:textColor="#ffffff"
-        android:textSize="36dp"
+        android:textSize="33dp"
         android:textColorHint="#ffffff"
-        android:fontFamily="sans-serif-smallcaps"
+        android:fontFamily="sans-serif-black"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="20dp"/>
 
@@ -68,6 +68,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
+            android:fontFamily="sans-serif-black"
 
             android:layout_marginLeft="07dp"
             android:layout_marginTop="330dp"
@@ -92,7 +93,7 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-black"
 
                 android:layout_marginLeft="07dp"
                 android:layout_marginTop="390dp"
@@ -119,7 +120,7 @@
                 android:layout_marginLeft="07dp"
                 android:layout_marginTop="450dp"
                 android:id="@+id/displayEmail"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-black"
                 android:textColor="#ffffff"
                 android:textSize="18dp"
                 />

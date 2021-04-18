@@ -26,6 +26,7 @@ public class signup extends AppCompatActivity {
 
         final CognitoSettings cognitos = new CognitoSettings(getApplicationContext());
 
+        final EditText name =findViewById(R.id.name);
         final EditText username =findViewById(R.id.username);
         final EditText useremail =findViewById(R.id.useremail);
         final EditText userphno =findViewById(R.id.userphone);
@@ -64,7 +65,8 @@ public class signup extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                userAttributes.addAttribute("name",String.valueOf(username.getText()));
+                userAttributes.addAttribute("name",String.valueOf(name.getText()));
+                userAttributes.addAttribute("custom:username",String.valueOf(username.getText()));
                 userAttributes.addAttribute("phone_number",String.valueOf(userphno.getText()));
                 userAttributes.addAttribute("email",String.valueOf(useremail.getText()));
 

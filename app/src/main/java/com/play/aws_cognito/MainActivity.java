@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i("Dashboard", text);
 
         final TextView displayName = findViewById(R.id.displayName);
-        final TextView displayName1 = findViewById(R.id.displayName1);
+        final TextView displayUsername = findViewById(R.id.displayUsername);
         final TextView displayMob = findViewById(R.id.displayMob);
         final TextView displayEmail = findViewById(R.id.displayEmail);
 
@@ -40,11 +40,12 @@ public class MainActivity extends AppCompatActivity {
         thisUser.getDetailsInBackground(new GetDetailsHandler() {
             @Override
             public void onSuccess(CognitoUserDetails cognitoUserDetails) {
+                String username = cognitoUserDetails.getAttributes().getAttributes().get("custom:username");
                 String name = cognitoUserDetails.getAttributes().getAttributes().get("name");
                 String email  = cognitoUserDetails.getAttributes().getAttributes().get("email");
                 String phone  = cognitoUserDetails.getAttributes().getAttributes().get("phone_number");
+                displayUsername.setText(username);
                 displayName.setText(name);
-                displayName1.setText(name);
                 displayMob.setText(phone);
                 displayEmail.setText(email);
             }
